@@ -1,184 +1,70 @@
 ````md
 # ☀️ VoltHome
 
-AI-powered solar station management and energy forecasting platform built with ASP.NET Core, PostgreSQL and ML.NET.
+VoltHome is a solar station monitoring and energy forecasting platform.
+It combines a React + TypeScript frontend with an ASP.NET Core backend, PostgreSQL, and ML.NET.
 
 ---
 
-## 🚀 Overview
+## 🚀 What it does
 
-VoltHome is a web application designed for monitoring solar power stations, forecasting energy generation, and calculating financial efficiency.
-
-The platform allows users to configure solar stations, monitor production in real time, analyze profitability, and leverage machine learning models for generation prediction.
-
----
-
-## ✨ Features
-
-### 🔐 Authentication & Security
-
-- ASP.NET Core Identity
-- JWT Authentication
-- Role-based authorization
-- Secure password policies
-
-### ☀️ Solar Station Management
-
-- Create and manage solar stations
-- Configure inverters
-- Configure panel groups
-- Multi-station support
-- Flexible editing of station components
-
-### 📊 Monitoring Dashboard
-
-- Current generation monitoring
-- Daily energy statistics
-- Forecast visualization
-- Automatic data refresh
-
-### 🤖 Machine Learning Forecasting
-
-- ML.NET integration
-- Hour-ahead generation prediction
-- Feature normalization
-- Automated model execution
-
-### 💰 Financial Analytics
-
-- Installation cost estimation
-- Green tariff calculations
-- Revenue estimation
-- Payback period analysis
-
-### ⚙️ Background Processing
-
-- Daily aggregations
-- Scheduled calculations
-- Forecast updates
-- Background services
+- Tracks solar station production and equipment configuration
+- Monitors energy generation and daily performance
+- Forecasts solar output using ML.NET models
+- Calculates green tariff revenue and payback period
+- Supports secure JWT authentication and role-based access
 
 ---
 
-## 🏗️ Architecture
+## 🧩 Technology stack
 
-```text
-Frontend
-    │
-    ▼
-Controllers (API)
-    │
-    ▼
-Services
-    │
-    ▼
-Repositories
-    │
-    ▼
-PostgreSQL
+- Frontend: React, TypeScript, Vite
+- Backend: ASP.NET Core 8, Entity Framework Core, ASP.NET Identity
+- Database: PostgreSQL
+- Machine learning: ML.NET
+- API docs: Swagger / OpenAPI
 
-    ▲
-    │
- ML.NET Forecast Engine
-🤖 Machine Learning Module
+---
 
-The platform includes a machine learning forecasting engine responsible for predicting future solar energy generation.
+## 📁 Frontend structure
 
-Input Features
-Feature	Description
-Hour	Current hour
-Month	Current month
-PanelPowerKw	Installed panel power
-InverterPowerKw	Inverter power
-HourCoefficient	Hour generation coefficient
-MonthCoefficient	Seasonal coefficient
-AzimuthFactor	Panel orientation factor
-TiltFactor	Tilt angle factor
-ML Pipeline
-Input Features
-      │
-      ▼
-Feature Scaling
-      │
-      ▼
-ML.NET Model
-      │
-      ▼
-Generation Forecast
+- `src/` — application components and pages
+- `public/screenshots/` — example UI images
+- `package.json` — frontend dependencies and scripts
 
-The architecture allows future migration toward more advanced forecasting models such as:
+---
 
-RNN
-LSTM
-Deep Learning Time-Series Models
-🛠️ Technology Stack
-Backend
-ASP.NET Core 8
-Entity Framework Core
-ASP.NET Identity
-JWT Authentication
-FluentValidation
-Database
-PostgreSQL
-Machine Learning
-ML.NET
-Documentation
-Swagger / OpenAPI
-Background Processing
-Hosted Services
-Background Workers
-📁 Project Structure
-VoltHome
-│
-├── VoltHome.API
-├── VoltHome.Services
-├── VoltHome.Infrastructure
-├── VoltHome.Domain
-├── VoltHome.Contracts
-│
-├── Authentication
-├── Solar Stations
-├── Analytics
-├── Forecasting
-├── Machine Learning
-└── Background Services
-⚙️ Getting Started
-Prerequisites
-.NET 8 SDK
-PostgreSQL
-Visual Studio 2022 / Rider
-Clone Repository
-git clone https://github.com/your-username/VoltHome.git
-cd VoltHome
-Configure Database
+## ⚙️ Run the frontend
 
-Update appsettings.json:
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-"ConnectionStrings": {
-  "DefaultConnection": "Host=localhost;Port=5440;Database=volt-home;Username=postgres;Password=1111"
-}
-Apply Migrations
-dotnet ef database update
-Run Application
-dotnet run
-🔑 Default Accounts
-Administrator
-Email: internalAdmin@gmail.com
-Password: Qwerty123$
-Test User
-Email: john@example.com
-Password: Test123$
-📖 API Documentation
+---
 
-Swagger UI:
+## 🔧 Important links
 
-https://localhost:<port>/swagger
-📸 Screenshots
-Login
-![Login](frontend/public/screenshots/login.png)
-Solar Station Configuration
-![Login](frontend/public/configuration/login.png)
-Monitoring Dashboard
-![Dashboard](frontend/public/screenshots/dashboard.png)
-Green tariff calculations
-![Dashboard](frontend/public/screenshots/green.png)
+- `backend/VoltHome.API` — API project for authentication and data services
+- `backend/VoltHome.Services` — business logic and forecasting services
+
+---
+
+## 📸 Screenshots
+
+Login screen:
+
+![Login](../public/screenshots/login.png)
+
+Solar station configuration:
+
+![Configuration](../public/screenshots/configuration.png)
+
+Monitoring dashboard:
+
+![Dashboard](../public/screenshots/dashboard.png)
+
+Green tariff calculations:
+
+![Green tariff](../public/screenshots/green.png)
