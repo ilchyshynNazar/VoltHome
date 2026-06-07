@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="backend/VoltHome.API/VoltHome.API.csproj" />
+  <Project Path="backend/VoltHome.Contracts/VoltHome.Contracts.csproj" />
+  <Project Path="backend/VoltHome.Domain/VoltHome.Domain.csproj" />
+  <Project Path="backend/VoltHome.Infrastructure/VoltHome.Infrastructure.csproj" />
+  <Project Path="backend/VoltHome.Services/VoltHome.Services.csproj" />
+</Solution>

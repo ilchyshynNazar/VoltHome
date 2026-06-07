@@ -1,0 +1,138 @@
+.vh-cfg {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.vh-cfg__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.vh-cfg__title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--vh-text-strong);
+}
+
+.vh-cfg__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.vh-cfg__station {
+  border: 1px solid var(--vh-border);
+  border-radius: 16px;
+  background: var(--vh-surface);
+  padding: 1.15rem 1.25rem 1.35rem;
+  text-align: left;
+}
+
+.vh-cfg__station-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--vh-border);
+}
+
+.vh-cfg__name {
+  margin: 0 0 0.25rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--vh-text-strong);
+}
+
+.vh-cfg__region {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--vh-muted);
+}
+
+.vh-cfg__icon-row {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.vh-cfg__block {
+  margin-top: 1rem;
+}
+
+.vh-cfg__block-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.vh-cfg__h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--vh-text-strong);
+}
+
+.vh-cfg__groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.85rem;
+}
+
+.vh-cfg__group-card {
+  background: var(--vh-surface-2);
+  border-radius: 12px;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--vh-border);
+}
+
+.vh-cfg__group-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.vh-cfg__group-title {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--vh-text-strong);
+}
+
+.vh-cfg__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+.vh-cfg__table td {
+  padding: 0.35rem 0;
+  border-top: 1px solid var(--vh-border);
+}
+
+.vh-cfg__table td:first-child {
+  color: var(--vh-muted);
+  width: 48%;
+}
+
+.vh-cfg__table tr:first-child td {
+  border-top: none;
+}
+
+.vh-cfg__empty {
+  color: var(--vh-muted);
+  margin-top: 0.5rem;
+}

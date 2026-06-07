@@ -1,0 +1,11 @@
+.vh-qm-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.vh-field-err {
+  color: #f87171;
+  font-size: 0.82rem;
+  margin-top: 0.2rem;
+}

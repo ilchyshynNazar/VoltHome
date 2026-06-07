@@ -1,0 +1,53 @@
+.vh-ph {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.vh-ph__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--vh-text-strong);
+}
+
+.vh-ph__text {
+  margin: 0;
+  color: var(--vh-muted);
+  line-height: 1.5;
+}
+
+.vh-pay {
+  margin-top: 1.5rem;
+}
+
+.vh-pay__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.vh-pay__card {
+  background: var(--vh-surface);
+  border: 1px solid var(--vh-border);
+  border-radius: 14px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.vh-pay__card--accent {
+  border-color: var(--vh-accent);
+  background: var(--vh-accent-soft);
+}
+
+.vh-pay__label {
+  font-size: 0.82rem;
+  color: var(--vh-muted);
+}
+
+.vh-pay__card strong {
+  font-size: 1.3rem;
+  color: var(--vh-text-strong);
+}

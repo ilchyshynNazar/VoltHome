@@ -1,0 +1,53 @@
+.vh-gauge {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.vh-gauge__svg {
+  width: 100%;
+  max-width: 260px;
+  display: block;
+  margin: 0 auto;
+}
+
+.vh-gauge--lg .vh-gauge__svg {
+  max-width: 400px;
+}
+
+.vh-gauge--lg .vh-gauge__value {
+  font-size: 2.1rem;
+}
+
+.vh-gauge--lg .vh-gauge__label {
+  font-size: 1.05rem;
+}
+
+.vh-gauge__readout {
+  margin-top: -0.25rem;
+}
+
+.vh-gauge__value {
+  font-size: 1.65rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--vh-text-strong);
+}
+
+.vh-gauge__unit {
+  margin-left: 0.25rem;
+  font-size: 0.95rem;
+  color: var(--vh-muted);
+}
+
+.vh-gauge__label {
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--vh-text);
+}
+
+.vh-gauge__sub {
+  font-size: 0.8rem;
+  color: var(--vh-muted);
+  margin-top: 0.15rem;
+}

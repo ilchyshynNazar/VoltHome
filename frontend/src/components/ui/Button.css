@@ -1,0 +1,75 @@
+.vh-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1rem;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    color 0.15s,
+    transform 0.1s;
+}
+
+.vh-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.vh-btn--primary {
+  background: linear-gradient(145deg, #7e14ff 0%, #863bff 100%);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 2px 8px rgba(110, 20, 255, 0.25);
+}
+
+.vh-btn--primary:hover:not(:disabled) {
+  filter: brightness(1.06);
+}
+
+.vh-btn--success {
+  background: #16a34a;
+  color: #fff;
+  border-color: #15803d;
+}
+
+.vh-btn--success:hover:not(:disabled) {
+  background: #22c55e;
+}
+
+.vh-btn--danger {
+  background: #dc2626;
+  color: #fff;
+  border-color: #b91c1c;
+}
+
+.vh-btn--danger:hover:not(:disabled) {
+  background: #ef4444;
+}
+
+.vh-btn--ghost {
+  background: var(--vh-surface-2);
+  color: var(--vh-text);
+  border-color: var(--vh-border);
+}
+
+.vh-btn--ghost:hover:not(:disabled) {
+  background: var(--vh-surface-3);
+}
+
+.vh-btn__icon {
+  display: inline-flex;
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.vh-btn__icon svg {
+  width: 100%;
+  height: 100%;
+}

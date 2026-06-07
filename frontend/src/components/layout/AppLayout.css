@@ -1,0 +1,44 @@
+.vh-shell {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.vh-shell__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: var(--vh-bg);
+}
+
+.vh-shell__content {
+  flex: 1;
+  padding: 1rem 1.25rem 1.5rem;
+  overflow: auto;
+}
+
+.vh-shell__footer {
+  padding: 0.5rem 1rem 0.75rem;
+  border-top: 1px solid var(--vh-border);
+  background: var(--vh-surface);
+}
+
+.vh-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--vh-muted);
+}
+
+.vh-lang__select {
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--vh-border);
+  background: var(--vh-surface-2);
+  color: var(--vh-text);
+  font: inherit;
+}

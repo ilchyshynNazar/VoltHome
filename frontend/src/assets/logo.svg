@@ -1,0 +1,56 @@
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Sun -->
+    <radialGradient id="sunCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF176"></stop>
+      <stop offset="70%" stop-color="#FFD54F"></stop>
+      <stop offset="100%" stop-color="#FF9800"></stop>
+    </radialGradient>
+
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#FFD54F" stop-opacity="0.5"></stop>
+      <stop offset="100%" stop-color="#FFD54F" stop-opacity="0"></stop>
+    </radialGradient>
+
+    <!-- Solar panel -->
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1565C0"></stop>
+      <stop offset="100%" stop-color="#1E88E5"></stop>
+    </linearGradient>
+
+    <!-- Light -->
+    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF59D" stop-opacity="0.9"></stop>
+      <stop offset="100%" stop-color="#FFF59D" stop-opacity="0"></stop>
+    </linearGradient>
+
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+    </filter>
+  </defs>
+
+  <!-- TEXT -->
+  <text x="20" y="65" font-family="Arial, sans-serif" font-size="32">
+    <tspan font-weight="700" fill="#1565C0">Volt</tspan>
+    <tspan font-weight="500" fill="#FFD54F">Home</tspan>
+  </text>
+
+  <!-- SUN -->
+  <circle cx="45" cy="25" r="16" fill="url(#sunGlow)" filter="url(#blur)"></circle>
+  <circle cx="45" cy="25" r="10" fill="url(#sunCore)"></circle>
+
+  <!-- MINI SOLAR PANEL -->
+  <g transform="rotate(-15 205 30)">
+    <rect x="190" y="20" width="30" height="14" rx="2" fill="url(#panelGrad)"></rect>
+
+    <!-- panel grid -->
+    <g stroke="#90CAF9" stroke-width="0.8">
+      <line x1="200" y1="20" x2="200" y2="34"></line>
+      <line x1="210" y1="20" x2="210" y2="34"></line>
+      <line x1="190" y1="27" x2="220" y2="27"></line>
+    </g>
+  </g>
+
+  <!-- LIGHT BEAM -->
+  <polygon points="50,30 180,28 205,28 55,35" fill="url(#beamGrad)" opacity="0.8"></polygon>
+</svg>

@@ -1,0 +1,136 @@
+.vh-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.vh-login__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+  filter: saturate(1.05);
+}
+
+[data-theme='dark'] .vh-login__bg {
+  opacity: 0.22;
+}
+
+.vh-login__panel {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 400px);
+  margin: 1.5rem;
+  padding: 1.75rem 1.5rem;
+  border-radius: 16px;
+  background: var(--vh-surface);
+  border: 1px solid var(--vh-border);
+  box-shadow: var(--vh-shadow);
+}
+
+.vh-login__title {
+  margin: 0 0 1.25rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--vh-text-strong);
+}
+
+.vh-login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.vh-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  text-align: left;
+  font-size: 0.85rem;
+  color: var(--vh-muted);
+}
+
+.vh-input {
+  padding: 0.55rem 0.65rem;
+  border-radius: 10px;
+  border: 1px solid var(--vh-border);
+  background: var(--vh-surface-2);
+  color: var(--vh-text);
+  font: inherit;
+}
+
+.vh-input:focus {
+  outline: 2px solid var(--vh-accent);
+  outline-offset: 1px;
+}
+
+.vh-login__err {
+  margin: 0;
+  color: #f87171;
+  font-size: 0.88rem;
+  text-align: left;
+}
+
+.vh-login__submit {
+  width: 100%;
+  margin-top: 0.25rem;
+  justify-content: center;
+  padding: 0.65rem;
+}
+
+.vh-login__switch {
+  margin-top: 1rem;
+  width: 100%;
+  border: none;
+  background: none;
+  color: var(--vh-accent);
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.vh-login__actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.vh-password {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.vh-password__input {
+  width: 100%;
+  padding-right: 2.5rem;
+}
+
+.vh-password__toggle {
+  position: absolute;
+  right: 0.7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+
+  color: var(--vh-muted);
+  cursor: pointer;
+
+  padding: 0;
+}
+
+.vh-password__toggle:hover {
+  color: var(--vh-text);
+}

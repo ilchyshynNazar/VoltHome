@@ -1,0 +1,79 @@
+.vh-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  backdrop-filter: blur(3px);
+}
+
+.vh-modal {
+  background: var(--vh-surface);
+  color: var(--vh-text);
+  border: 1px solid var(--vh-border);
+  border-radius: 14px;
+  width: min(100%, 440px);
+  max-height: min(90vh, 720px);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--vh-shadow);
+}
+
+.vh-modal--wide {
+  width: min(100%, 800px);
+}
+
+.vh-modal--xl {
+  width: min(100%, 980px);
+  max-height: min(92vh, 900px);
+}
+
+.vh-modal__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem 1.1rem;
+  border-bottom: 1px solid var(--vh-border);
+}
+
+.vh-modal__head h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--vh-text-strong);
+}
+
+.vh-modal__close {
+  border: none;
+  background: var(--vh-surface-2);
+  color: var(--vh-text);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 8px;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.vh-modal__close:hover {
+  background: var(--vh-surface-3);
+}
+
+.vh-modal__body {
+  padding: 1rem 1.1rem;
+  overflow: auto;
+  flex: 1;
+}
+
+.vh-modal__foot {
+  padding: 0.85rem 1.1rem;
+  border-top: 1px solid var(--vh-border);
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}

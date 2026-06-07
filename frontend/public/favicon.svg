@@ -1,0 +1,42 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D47A1"></stop>
+      <stop offset="100%" stop-color="#021B3A"></stop>
+    </linearGradient>
+
+    <!-- Sun -->
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF176"></stop>
+      <stop offset="100%" stop-color="#FFB300"></stop>
+    </radialGradient>
+
+    <!-- Panel -->
+    <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#42A5F5"></stop>
+      <stop offset="100%" stop-color="#1565C0"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded background -->
+  <rect width="64" height="64" rx="16" fill="url(#bg)"></rect>
+
+  <!-- Sun -->
+  <circle cx="20" cy="18" r="8" fill="url(#sun)"></circle>
+
+  <!-- Light beam -->
+  <path d="M24 24 C32 28, 38 34, 46 42" stroke="#FFE082" stroke-width="2" stroke-linecap="round" opacity="0.7"></path>
+
+  <!-- Solar panel -->
+  <g transform="rotate(-18 44 44)">
+    <rect x="32" y="36" width="20" height="14" rx="2" fill="url(#panel)"></rect>
+
+    <!-- Grid -->
+    <g stroke="#BBDEFB" stroke-width="0.6">
+      <line x1="38" y1="36" x2="38" y2="50"></line>
+      <line x1="44" y1="36" x2="44" y2="50"></line>
+      <line x1="32" y1="43" x2="52" y2="43"></line>
+    </g>
+  </g>
+</svg>

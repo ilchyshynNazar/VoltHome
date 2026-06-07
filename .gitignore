@@ -1,0 +1,24 @@
+# === Локальне сміття IDE (Visual Studio / VS Code / Rider) ===
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+.vscode/
+.idea/
+
+# === Фронтенд (Node.js / React) ===
+node_modules/
+/frontend/node_modules/
+dist/
+/frontend/dist/
+build/
+/frontend/build/
+.env*.local
+
+# === Безпека та Секрети (Важливо для паблік репо!) ===
+appsettings.Development.json
+
+# === Системні файли ===
+.DS_Store
+Thumbs.db
